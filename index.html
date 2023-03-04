@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<!-- First I layout the welcome to the quiz aswell as the buttons and text that the player will see when starting-->
+<!-- I put this all into a div for easy access in its entirety in CSS later-->
+<h1> The General Knowledge Quiz </h1>
+
+<div id ="quizInstuctions">
+<form id="startupPrompt">
+<h2> Welcome to the General Knowledge Quiz created by Jack Nelligan.</h2>
+<h2> A correct answer will prompt +1 to your score and an incorrect one will result in no score addition.</h2>
+<h2> At the end your final score will be displayed.</h2>
+<h2> When you are ready to begin simply click the button below.</h2>
+</form>
+<form id="quizLayout">
+   <legend id="instructions"> </legend>
+   <br>
+   <input type="text" value="" id="inputField">
+   <br>
+   <br>
+   <input type="button" value="Compare" id="submitButton">
+   <h2 id="resultsText"></h2>
+ </form>
+</div>
+
+<!-- Then I place buttons that will be used for dynamically updating the page-->
+<input type="button" value="Start" id="startQuiz">
+
+<input type="button" value="Results!" id="resultsButton">
+
+<br>
+
+<!-- I placed images into the html that will be hidden and then displayed upon completion aswell as text to display final score-->
+<form>
+    <h1 id="results"></h1>
+</form>
+
+<img id="bronze" src="images/bronze.jpeg">
+<img id="silver" src="images/silver.png">
+<img id="gold" src="images/gold.jpeg">
+
+
+<div id="correctScore">Your Current Score is 0</div>
+
+    <script src="Java/index.js"></script>
+</body>
+</html>
